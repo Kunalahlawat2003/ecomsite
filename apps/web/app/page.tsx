@@ -1,102 +1,64 @@
-import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui/button";
-import styles from "./page.module.css";
+import { Footer } from "@repo/ui/footer";
+import { MobileFooter } from "@repo/ui/mobileFooter";
+import { MobileNav } from "@repo/ui/mobilenav";
+import { SearchBar } from "@repo/ui/searchbar";
+import { SelectorSection } from "@repo/ui/selectorSection";
+import { Sidebar } from "@repo/ui/sidebar";
+import { Slideshow } from "@repo/ui/slideshow";
+import { Testimonials } from "@repo/ui/testimonials";
 
-type Props = Omit<ImageProps, "src"> & {
-  srcLight: string;
-  srcDark: string;
-};
-
-const ThemeImage = (props: Props) => {
-  const { srcLight, srcDark, ...rest } = props;
-
-  return (
-    <>
-      <Image {...rest} src={srcLight} className="imgLight" />
-      <Image {...rest} src={srcDark} className="imgDark" />
-    </>
-  );
-};
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <ThemeImage
-          className={styles.logo}
-          srcLight="turborepo-dark.svg"
-          srcDark="turborepo-light.svg"
-          alt="Turborepo logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>apps/web/app/page.tsx</code>
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  return <div className="h-screen bg-white dark:bg-black ">
+    <SearchBar/>
+    <Sidebar/>
+    <MobileNav/>
+    <Slideshow/>
+    <div className=" bg-white dark:bg-black justify-center items-center w-full xl:h-screen h-[50%]  mt-10 flex gap-1 sm:overflow-hidden overflow-x-scroll ">
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new/clone?demo-description=Learn+to+implement+a+monorepo+with+a+two+Next.js+sites+that+has+installed+three+local+packages.&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F4K8ZISWAzJ8X1504ca0zmC%2F0b21a1c6246add355e55816278ef54bc%2FBasic.png&demo-title=Monorepo+with+Turborepo&demo-url=https%3A%2F%2Fexamples-basic-web.vercel.sh%2F&from=templates&project-name=Monorepo+with+Turborepo&repository-name=monorepo-turborepo&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fturborepo%2Ftree%2Fmain%2Fexamples%2Fbasic&root-directory=apps%2Fdocs&skippable-integrations=1&teamSlug=vercel&utm_source=create-turbo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://turbo.build/repo/docs?utm_source"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      <div className="bg-[url('/image_men.webp')] relative bg-center bg-cover h-full w-1/2">
+        <div className="absolute bottom-0 left-0 sm:p-10 p-3">
+          <p className="text-white lg:text-5xl md:text-4xl text-xl font-extrabold mb-3">SHOP MENS</p>
+          <button className="text-white border border-white px-5 py-3 hover:text-white hover:bg-green-500 transition-all duration-300 sm:text-lg text-xs font-semibold">EXPLORE</button>
         </div>
-        <Button appName="web" className={styles.secondary}>
-          Open alert
-        </Button>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com/templates?search=turborepo&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://turbo.build?utm_source=create-turbo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to turbo.build →
-        </a>
-      </footer>
+      </div>
+
+      <div className="bg-[url('/image_women.webp')] relative bg-center bg-cover h-full w-1/2">
+        <div className="absolute bottom-0 left-0 sm:p-10 p-3">
+          <p className="text-white lg:text-5xl md:text-4xl text-xl font-extrabold mb-3">SHOP WOMENS</p>
+          <button className="text-white border border-white px-5 py-3 hover:text-white hover:bg-green-500  transition-all duration-300 sm:text-lg text-xs font-semibold">EXPLORE</button>
+        </div>
+      </div>
+
     </div>
-  );
+    <div className=" relative bg-white dark:bg-black justify-center items-center xl:h-[80%] md:h-[40%] h-[70%] w-full bg-cover mt-10 text-center text-4xl tracking-widest text-black dark:text-white flex flex-col">
+      <div className="absolute top-0 ">TRENDING NOW</div>
+      <div className="grid sm:grid-cols-4 grid-cols-2 xl:h-[90%] md:h-[80%] h-[90%] min-h-max w-full gap-5 px-6 py-10 ">
+        <div className="relative h-full col-span-1 bg-[url('/printed_shirts_image.webp')] bg-cover bg-center rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+          <p className="absolute bottom-0 left-0 xl:text-4xl md:text-2xl text-lg text-left xl:p-5 p-2 text-white font-bold">PRINTED<br/>SHIRTS</p>
+        </div>
+
+        <div className="relative h-full col-span-1 bg-[url('/baggyfit_image.webp')] bg-cover bg-center rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+          <p className="absolute bottom-0 left-0 xl:text-4xl md:text-2xl text-lg text-left xl:p-5 p-2 text-white font-bold">BAGGY <br/> FIT</p>
+        </div>
+
+        <div className="relative h-full col-span-1 bg-[url('/trousers_image.webp')] bg-cover bg-center rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+          <p className="absolute bottom-0 left-0 xl:text-4xl md:text-2xl text-lg text-left xl:p-5 p-2 text-white font-bold">TROUSERS</p>
+        </div>
+
+        <div className=" relative h-full col-span-1 bg-[url('/oversized_image.webp')] bg-cover bg-center rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+          <p className="absolute bottom-0 left-0 xl:text-4xl md:text-2xl text-lg text-left xl:p-5 p-2 text-white font-bold">OVERSIZED<br/>TEES</p>
+        </div>
+      </div>
+    </div>
+
+    <hr className="border mb-5 mx-10 border-gray-200 dark:border-gray-500"/>
+
+    <SelectorSection/>
+    <hr className="border-gray-200 mx-10 mt-5 dark:border-gray-500"/>
+    <Testimonials/>
+    <hr className="border border-white dark:border-gray-500 mt-10"/>
+    <Footer/>
+    <MobileFooter/>
+  </div>
 }

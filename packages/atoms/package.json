@@ -1,0 +1,22 @@
+{
+  "name": "@repo/atoms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "./sidebarAtom": "./src/sidebarAtom.tsx",
+    "./searchbarAtom": "./src/searchbarAtom.tsx",
+    "./cartAtom": "./src/cartAtom.tsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jotai": "^2.11.1",
+    "recoil": "^0.7.7"
+  }
+}
