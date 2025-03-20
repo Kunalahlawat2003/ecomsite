@@ -1,4 +1,7 @@
+import { Blur } from "@repo/ui/blur";
+import { Cart } from "@repo/ui/cart";
 import { Footer } from "@repo/ui/footer";
+import { Login } from "@repo/ui/login";
 import { MobileFooter } from "@repo/ui/mobileFooter";
 import { MobileNav } from "@repo/ui/mobilenav";
 import { SearchBar } from "@repo/ui/searchbar";
@@ -10,6 +13,9 @@ import { Testimonials } from "@repo/ui/testimonials";
 
 export default function Home() {
   return <div className="h-screen bg-white dark:bg-black ">
+    <Blur/>
+    <Login/>
+    <Cart/>
     <SearchBar/>
     <Sidebar/>
     <MobileNav/>

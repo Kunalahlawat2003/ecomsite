@@ -13,11 +13,13 @@ import { TwitterIcon } from "../icons/twitterIcon.js"
 import { WebsiteIcon } from "../icons/websiteIcon.js"
 import { PinterestIcon } from "../icons/pinterestIcon.js"
 import { DarkmodeTab } from "./darkmodeTab.js"
+import { BlurAtom } from "@repo/atoms/blurAtom"
 
 
 
 export function Sidebar () {
     const [sidebarOpen, setSidebarOpen] = useAtom(sidebarAtom)
+    const [isBlurOpen, setBlurOpen] = useAtom(BlurAtom);
 
     return <div className={`fixed top-0 left-0 sm:h-screen h-[92%] transition-transform duration-300 ease-in-out ${
         sidebarOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
@@ -27,7 +29,7 @@ export function Sidebar () {
              <LoginIcon size="3xl"/>
              <p className=" text-lg">LOG IN</p>
            </div>
-           <div onClick={() => setSidebarOpen(!sidebarOpen)} className="justify-self-end self-center cursor-pointer">
+           <div onClick={() => {setSidebarOpen(!sidebarOpen), setBlurOpen(false)}} className="justify-self-end self-center cursor-pointer">
                <CloseIcon size="xl"/>
            </div>
          </div>

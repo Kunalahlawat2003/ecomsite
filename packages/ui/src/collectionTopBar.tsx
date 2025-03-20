@@ -1,30 +1,29 @@
 "use client"
-
-import { useEffect, useState } from "react";
-import { useAtom } from "jotai";
+import { BlurAtom } from "@repo/atoms/blurAtom";
+import { CartAtom } from "@repo/atoms/cartAtom";
+import { LoginAtom } from "@repo/atoms/loginAtom";
+import { SearchbarAtom } from "@repo/atoms/searchbarAtom";
 import { sidebarAtom } from "@repo/atoms/sidebarAtom";
+import { useAtom } from "jotai";
+import { useEffect, useState } from "react";
 import { SidebarIcon } from "../icons/sidebarIcon.js";
 import { BeakerIcon } from "../icons/beakerIcon.js";
+import { SunIcon } from "../icons/sunIcon.js";
+import { MoonIcon } from "../icons/moonIcon.js";
 import { AccountIcon } from "../icons/accountIcon.js";
 import { CartIcon } from "../icons/cartIcon.js";
 import { SearchIcon } from "../icons/searchIcon.js";
-import { MoonIcon } from "../icons/moonIcon.js";
-import { SunIcon } from "../icons/sunIcon.js";
-import { SearchbarAtom } from "@repo/atoms/searchbarAtom";
-import { CartAtom } from "@repo/atoms/cartAtom";
-import { LoginAtom } from "@repo/atoms/loginAtom";
-import { BlurAtom } from "@repo/atoms/blurAtom";
 
 
-export function Topbar() {
+export function CollectionTopbar() {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useAtom(sidebarAtom);
   const [isDarkModeOn, setDarkModeOn] = useState(false);
   const [searchbarOpen, setSearchbarOpen ] = useAtom(SearchbarAtom);
   const [isCartOpen, setCartOpen] = useAtom(CartAtom);
-  const [isLoginTabOpen, setLoginTabOpen] = useAtom(LoginAtom);
-  const [isBlurOpen, setBlurOpen] = useAtom(BlurAtom);
+  const [, setLoginTabOpen] = useAtom(LoginAtom);
+  const [, setBlurOpen] = useAtom(BlurAtom);
 
   useEffect(() => {
 
@@ -71,8 +70,8 @@ export function Topbar() {
     }
   }, [])
 
-    return <div className={`z-50 drop-shadow-xl fixed w-full bg-transparent h-[12%] justify-between items-center flex p-5  xl:hover:bg-white xl:hover:text-black xl:dark:hover:bg-black xl:dark:hover:text-white duration-300 transition-all 
-    ${isScrolled ? 'bg-white dark:bg-black dark:text-white text-black shadow-[0_4px_6px_rgba(0,0,0,0.1)]' : 'bg-transparent text-white'}`}>
+    return <div className={`z-50 drop-shadow-xl fixed w-full bg-white h-[12%] justify-between items-center flex p-5 dark:bg-black dark:text-white duration-300 transition-all 
+    ${isScrolled ? 'bg-white dark:bg-black dark:text-white text-black shadow-[0_4px_6px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_6px_rgba(28,28,28,28.0.8)]' : 'bg-white text-black shadow-[0_4px_6px_rgba(0,0,0,0.1)]'} dark:shadow-[0_4px_6px_rgba(28,28,28,28.0.8)]`}>
     <div className="cursor-pointer" onClick={() => {
       setSidebarOpen(!sidebarOpen), setBlurOpen(true), setSearchbarOpen(true), setCartOpen(true)
     }}>

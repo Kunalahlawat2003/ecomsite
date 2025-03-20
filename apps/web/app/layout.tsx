@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Topbar } from "@repo/ui/topbar";
+import LayoutWrapper from "./layoutWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,10 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" id="html" className="h-full bg-white dark:bg-black dark">
+    <html lang="en" id="html" className="h-full bg-white dark:bg-black">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Topbar/>
-        {children}
+        <LayoutWrapper>
+          {children}
+        </LayoutWrapper>
       </body>
     </html>
   );

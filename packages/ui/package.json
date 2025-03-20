@@ -12,7 +12,14 @@
     "./testimonials": "./src/testimonialsSection.tsx",
     "./footer": "./src/footer.tsx",
     "./mobileFooter": "./src/mobileFooter.tsx",
-    "./searchbar": "./src/searchbar.tsx"
+    "./searchbar": "./src/searchbar.tsx",
+    "./cart": "./src/cart.tsx",
+    "./login": "./src/login.tsx",
+    "./blur": "./src/blur.tsx",
+    "./collectionTopbar": "./src/collectionTopBar.tsx",
+    "./filterIcon": "./src/filterIcon.tsx",
+    "./adminTopbar": "./src/adminTopbar.tsx",
+    "./addProductModal": "./src/AddProductModal.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

@@ -9,7 +9,10 @@
   "exports": {
     "./sidebarAtom": "./src/sidebarAtom.tsx",
     "./searchbarAtom": "./src/searchbarAtom.tsx",
-    "./cartAtom": "./src/cartAtom.tsx"
+    "./cartAtom": "./src/cartAtom.tsx",
+    "./loginAtom": "./src/loginAtom.tsx",
+    "./blurAtom": "./src/blurAtom.tsx",
+    "./addProductAtom": "./src/addProductAtom.tsx"
   },
   "keywords": [],
   "author": "",

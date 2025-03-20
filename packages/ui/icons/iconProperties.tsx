@@ -1,7 +1,7 @@
 
 
 export interface iconProps {
-    size: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "custom";
+    size: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "custom" | "login" ;
     filled?: any
 }
 
@@ -13,5 +13,6 @@ export interface iconProps {
     "2xl": "size-8 ",
     "3xl": "size-9 ",
     "4xl": "size-11",
-    "custom": "xl:size-9 lg:size-12 md:size-10 size-8 "
+    "custom": "xl:size-9 lg:size-12 md:size-10 size-8 ",
+    "login": "sm:size-11 size-7 "
 }
