@@ -79,10 +79,11 @@ export function CollectionTopbar() {
     </div>
 
     <div className="font-bold xl:text-4xl lg:text-5xl md:text-4xl text-3xl flex items-center gap-1 cursor-pointer">
-      <div className={`${isScrolled ? 'text-green-500 ': ''} text-green-500 `}>
+      {/* <div className={`${isScrolled ? 'text-green-500 ': ''} text-green-500 `}>
         <BeakerIcon size="custom"/>
       </div>
-      FLEXLAB
+      FLEXLAB */}
+      <img src="https://ninetheme.com/themes/anarkali/wp-content/uploads/2023/11/240-logo.png" className="xl:w-48 sm:w-auto w-40 object-center dark:bg-white dark:rounded-3xl"/>
     </div>
 
     <div className="flex gap-2 ">

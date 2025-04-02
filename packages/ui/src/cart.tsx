@@ -92,7 +92,7 @@ export function Cart () {
                 products.map((product) => (
                   <div key={product.id} className="w-full min-h-max h-[23%] gap-2 flex p-2">
                     <div className="bg-red-200 max-w-[30%] h-full w-[30%] rounded-sm flex">
-                      <img src="https://www.snitch.co.in/cdn/shop/files/4MSW9069-02-M16.jpg?v=1736399763" className="object-cover object-center w-full h-full" />
+                      <img src="https://manyavar.scene7.com/is/image/manyavar/MOIW221_439-INDIGO+BLUE_444.1761_27-07-2024-21-50:650x900?&dpr=on,2" className="object-cover object-center w-full h-full" />
                     </div>
     
                     <div className="flex flex-col gap-2 min-w-[50%] max-w-[50%] h-full sm:text-base text-sm">

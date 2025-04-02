@@ -19,7 +19,8 @@
     "./collectionTopbar": "./src/collectionTopBar.tsx",
     "./filterIcon": "./src/filterIcon.tsx",
     "./adminTopbar": "./src/adminTopbar.tsx",
-    "./addProductModal": "./src/AddProductModal.tsx"
+    "./addProductModal": "./src/AddProductModal.tsx",
+    "./selectorSectionMens": "./src/selectorSectionMens.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

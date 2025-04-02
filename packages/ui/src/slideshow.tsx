@@ -6,19 +6,19 @@ import { useEffect, useState } from "react";
 export function Slideshow() {
     const images = [
         {
-            src: 'https://www.bonkerscorner.com/cdn/shop/files/20241217_082711559_iOS_1600x_crop_center.png?v=1734427156',
-            text: "Welcome to the Future"
+            src: 'https://ninetheme.com/themes/anarkali/wp-content/uploads/2023/11/slideshow-1920-24.png',
+            text: "Welcome to the Culture"
         }
         ,{
-            src: 'https://www.bonkerscorner.com/cdn/shop/files/1_1600x_crop_center.jpg?v=1731932636',
+            src: 'https://ninetheme.com/themes/anarkali/wp-content/uploads/2023/11/slideshow-1920-31.png',
             text: "Explore New Horizons"
         },
         {
-            src: 'https://www.bonkerscorner.com/cdn/shop/files/3_1600x_crop_center.png?v=1731932637',
+            src: 'https://images7.alphacoders.com/109/1095697.jpg',
             text: "Discover the Magic"
         },
         {
-            src: 'https://www.bonkerscorner.com/cdn/shop/files/20241010_042252797_iOS_c10a14ef-6418-4fe1-b0d5-0ce7324983c6_1600x_crop_center.png?v=1728904764',
+            src: 'https://images5.alphacoders.com/105/thumb-1920-1056562.jpg',
             text: "Experience Adventure"
         }
     ];
@@ -55,7 +55,7 @@ export function Slideshow() {
                 index === currentImageIndex ? 'opacity-100 scale-100 animate-zoomInOut' : 'opacity-0 scale-100'
               }`}
             />
-            <div className={`w-full text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-extrabold sm:text-4xl text-3xl transition-opacity duration-1000 ${
+            <div className={`w-full text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-serif font-extrabold sm:text-4xl text-3xl transition-opacity duration-1000 ${
               index === currentImageIndex ? 'opacity-100' : 'opacity-0'
             }`}>
                 {image?.text}

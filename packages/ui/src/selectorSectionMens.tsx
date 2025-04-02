@@ -2,75 +2,75 @@
 import { useState } from "react";
 
 
-export function SelectorSection() {
-    const [selectedCategory, setSelectedCategory] = useState('saree');
+export function SelectorSectionMens() {
+    const [selectedCategory, setSelectedCategory] = useState('sherwani');
   
     // Define product data for each category
     const products: any = {
-      saree: [
+      sherwani: [
         {
-          title: "Indigo Blue Leaf Patterned Saree",
+          title: "Black Achkan Style Sherwani Set",
           price: { original: 2500, discounted: 2000 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/SB16556_439-INDIGO+BLUE_101.16369_27-05-2024-13-30:650x900?&dpr=on,2"
+          image: "https://manyavar.scene7.com/is/image/manyavar/SHOS076D-310-Black.13721_21-03-2024-16-01:650x900?&dpr=on,2"
         },
         {
-          title: "Pink Saree with Floral Borders",
+          title: "Pink Patterned Sherwani Set",
           price: { original: 2300, discounted: 1900 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/SB16202-415-LIGHT+PINK_0188_29-06-2023-18-08:650x900?&dpr=on,2"
+          image: "https://manyavar.scene7.com/is/image/manyavar/SHOS357D_315-Pink.3452_21-02-2024-14-58:650x900"
         },
         {
-          title: "Dark Pink Zari Weaved Saree",
+          title: "Warm White Patterned Sherwani Set",
           price: { original: 2200, discounted: 1800 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/SB15862_425-RANI_101.6135_25-12-2024-17-00:650x900?&dpr=on,2"
+          image: "https://manyavar.scene7.com/is/image/manyavar/CPSH223D_340-Warm+White_101.0145_29-07-2024-19-27:650x900?&dpr=on,2"
         },
         {
-          title: "Ruby Red Floral Zari Work Saree",
+          title: "Graceful Light Grey Sherwani",
           price: { original: 2400, discounted: 2000 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/SB16047_422-WINE_101.5864_25-12-2024-16-14:650x900?&dpr=on,2"
-        }
-      ],
-      lehenga: [
-        {
-          title: "Ethereal Blue Net Lehenga",
-          price: { original: 1200, discounted: 1000 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/JK-blue+(1)_19-11-2024-05-45:650x900?&dpr=on,2"
-        },
-        {
-          title: "Red and Mustard Bridal Lehenga",
-          price: { original: 1000, discounted: 850 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/UL5099-420-425-YELLOW-RANI_401.23454_13-09-2024-14-30:650x900"
-        },
-        {
-          title: "Rama Green Lehenga with Dupatta",
-          price: { original: 1100, discounted: 950 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/UL5016_433-RAMA+GREEN+_101.3934_23-12-2024-13-53:650x900?&dpr=on,2"
-        },
-        {
-          title: "Elegant Beige Art Silk Lehenga",
-          price: { original: 1300, discounted: 1100 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/SKTD4693_421-BEIGE_101.35883_23-10-2024-22-18:650x900?&dpr=on,2"
+          image: "https://manyavar.scene7.com/is/image/manyavar/SHOS388_312-Light+Grey.9350_30-09-2024-12-37:650x900?&dpr=on,2"
         }
       ],
       kurta: [
         {
-          title: "Teal Blue Suit with Linear Kurta ",
+          title: "Mustard Charm Cotton Kurta",
+          price: { original: 1200, discounted: 1000 },
+          image: "https://manyavar.scene7.com/is/image/manyavar/ML12146_328-Mustard_101.5833_25-09-2024-13-04:650x900?&dpr=on,2"
+        },
+        {
+          title: "Teal Green and Patterned Kurta",
+          price: { original: 1000, discounted: 850 },
+          image: "https://manyavar.scene7.com/is/image/manyavar/ML12122_327-Teal+Green_101.22118_29-05-2024-17-54:650x900?&dpr=on,2"
+        },
+        {
+          title: "Delicate White Bel Buti Printed Kurta",
+          price: { original: 1100, discounted: 950 },
+          image: "https://manyavar.scene7.com/is/image/manyavar/MLOSK031_340-Warm+White.4921_11-01-2024-16-25:650x900?&dpr=on,2"
+        },
+        {
+          title: "Black Striped Patterned Kurta",
+          price: { original: 1300, discounted: 1100 },
+          image: "https://manyavar.scene7.com/is/image/manyavar/KOS035_310-Black_101.22700_30-05-2024-11-22:650x900?&dpr=on,2"
+        }
+      ],
+      jacket: [
+        {
+          title: "Black Fish Scale Nehru Jacket",
           price: { original: 1500, discounted: 1200 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/NMSAS6795_426-T.BLUE_101.18377_03-09-2024-17-27:650x900?&dpr=on,2"
+          image: "https://manyavar.scene7.com/is/image/manyavar/JAC422V_310-Black_101.0997_25-11-2024-18-41:650x900?&dpr=on,2"
         },
         {
-          title: "Elegant Pink Chinon Palazzo Suit",
+          title: "Emerald Elegance Nehru Jacket",
           price: { original: 1800, discounted: 1500 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/NMSAS6624_414-PINK_101.35514_23-10-2024-21-08:650x900?&dpr=on,2"
+          image: "https://manyavar.scene7.com/is/image/manyavar/JAC434_316-Dark+Green_101.19593_19-02-2025-14-10:650x900?&dpr=on,2"
         },
         {
-          title: "Cream Elegance Palazzo Suit",
+          title: "Navy Blue Printed Jacket",
           price: { original: 1600, discounted: 1400 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/SAS8150_402-CREAM_444.4994_24-12-2024-12-04:650x900?&dpr=on,2"
+          image: "https://manyavar.scene7.com/is/image/manyavar/JAC246_FEROZE.3307_20-05-2023-12-40:650x900?&dpr=on,2"
         },
         {
-          title: "Pink Enchantment Palazzo Suit",
+          title: "Marigold Yellow Shankh Motif Jacket",
           price: { original: 1700, discounted: 1400 },
-          image: "https://manyavar.scene7.com/is/image/manyavar/SAS8150_414-PINK_444.5066_24-12-2024-12-24:650x900?&dpr=on,2"
+          image: "https://manyavar.scene7.com/is/image/manyavar/JAC356_324-F-YELLOW.5197_14-10-2023-16-43:650x900?&dpr=on,2"
         }
       ]
     };
@@ -84,21 +84,21 @@ export function SelectorSection() {
         <div className="flex gap-3 w-full h-max justify-center mt-5 mb-2">
           <button
             className="text-md border border-black rounded-3xl py-2 px-3 bg-white"
-            onClick={() => handleCategoryClick('saree')}
+            onClick={() => handleCategoryClick('sherwani')}
           >
-            SAREE
-          </button>
-          <button
-            className="text-md border border-black rounded-3xl py-2 px-3 bg-white"
-            onClick={() => handleCategoryClick('lehenga')}
-          >
-            LEHENGA
+            SHERWANI
           </button>
           <button
             className="text-md border border-black rounded-3xl py-2 px-3 bg-white"
             onClick={() => handleCategoryClick('kurta')}
           >
             KURTA
+          </button>
+          <button
+            className="text-md border border-black rounded-3xl py-2 px-3 bg-white"
+            onClick={() => handleCategoryClick('jacket')}
+          >
+            JACKET
           </button>
         </div>
   

@@ -20,8 +20,8 @@ export default function Product () {
           <Sidebar />
           <MobileNav />
           {/* Top Section (40% Height) */}
-          <div className="h-[40vh] w-full flex items-center justify-center">
-            <h1 className="text-3xl font-bold text-center translate-y-10 dark:text-white">
+          <div className="bg-[url('/background.jpg')] h-[40vh] w-full flex items-center justify-center">
+            <h1 className="text-3xl font-serif font-bold text-center translate-y-10 text-white dark:text-white">
               Welcome to Our Product Collection
             </h1>
           </div>
@@ -29,7 +29,7 @@ export default function Product () {
           {/* Product Grid Section */}
           <div className="w-full flex flex-col">
             {/* Small Top Section (15% Height) */}
-            <div className="xl:h-[15vh] h-[10vh] w-full flex items-center justify-between bg-gray-200 dark:bg-gray-900 dark:text-white xl:px-16 px-4 text-gray-500">
+            <div className="xl:h-[15vh] h-[10vh] w-full flex items-center justify-between bg-gray-200 dark:bg-neutral-900 dark:text-white xl:px-16 px-4 text-gray-500">
                 <div className="flex gap-2 text-base items-center cursor-pointer">
                     <FilterIcon size="lg"/>
                     Sort
@@ -41,18 +41,18 @@ export default function Product () {
             </div>
     
             {/* Product Grid (Auto-growing) */}
-            <div className="grid md:grid-cols-4 grid-cols-2 lg:gap-12 gap-4 xl:px-16 xl:py-4 p-4 w-full">
+            <div className="grid md:grid-cols-4 grid-cols-2 xl:gap-16 lg:gap-12 gap-4 xl:px-16 xl:py-4 p-4 w-full">
               {/* Sample Product Items (Fixed Height) */}
               {Array.from({ length: 16 }).map((_, index) => (
                 <div
                   key={index}
-                  className="xl:h-[470px] h-[300px] hover:scale-95 transition-all duration-500 cursor-pointer"
+                  className="xl:h-[480px] h-[300px] hover:scale-95 transition-all duration-500 cursor-pointer"
                 >
                   <div className="h-[80%] w-full bg-red-200">
-                    <img src="https://www.snitch.co.in/cdn/shop/files/4MSW9069-02-M16.jpg?v=1736399763" className=" object-cover w-full h-full object-fill" />
+                    <img src="https://manyavar.scene7.com/is/image/manyavar/MOIW221_439-INDIGO+BLUE_444.1761_27-07-2024-21-50:650x900?&dpr=on,2" className=" object-cover w-full h-full object-fill" />
                   </div>
                   <div className="py-2 px-0 md:text-sm xl:text-base text-xs dark:text-white">
-                    <div className="">Beige Omber light weight sweater</div>
+                    <div className="">Indigo Blue Imperial Print with Sequin Work</div>
                     <div className="flex gap-2">
                       <div className="text-gray-400"><s>Rs. </s><s>2000</s></div>
                       <div className="flex">

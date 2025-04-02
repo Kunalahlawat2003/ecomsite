@@ -16,8 +16,8 @@ export default function Admin () {
         <SearchBar />
         <Sidebar />
         <MobileNav />
-        <div className="h-[40vh] w-full flex items-center justify-center bg-red-200">
-          <h1 className="text-3xl font-bold text-center translate-y-10 dark:text-white">
+        <div className="bg-[url('/admin_bg.avif')] h-[40vh] w-full flex items-center justify-center bg-red-200">
+          <h1 className=" text-3xl font-serif font-bold text-center translate-y-10 text-white dark:text-white">
             Welcome Admin!
           </h1>
         </div>

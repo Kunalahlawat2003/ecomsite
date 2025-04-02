@@ -9,7 +9,7 @@ export function ProductSearchBar () {
 
             <div className="min-w-[80%] sm:min-w-[49%] sm:max-w-[49%] xl:max-h-[70%] md:max-h-[40%] sm:h-full cursor-pointer hover:scale-95 transition-all">
                 <div className="relative sm:h-[87%] h-[90%] w-full">
-                  <img src="https://www.snitch.co.in/cdn/shop/files/4MSW9069-02-M16.jpg?v=1736399763" className="object-cover absolute object-center h-full w-full"/>
+                  <img src="https://manyavar.scene7.com/is/image/manyavar/MOIW221_439-INDIGO+BLUE_444.1761_27-07-2024-21-50:650x900?&dpr=on,2" className="object-cover absolute object-center h-full w-full"/>
                 </div>
                 <div className="relative w-full flex flex-col sm:text-xs dark:text-white text-xs">
                     <div className="">Beige Omber light weight sweater</div>
@@ -25,7 +25,7 @@ export function ProductSearchBar () {
 
             <div className="min-w-[80%] sm:min-w-[49%] sm:max-w-[49%] xl:max-h-[70%] md:max-h-[40%] sm:h-full cursor-pointer hover:scale-95 transition-all">
                 <div className="relative sm:h-[87%] h-[90%] w-full">
-                  <img src="https://www.snitch.co.in/cdn/shop/files/4MSW9069-02-M16.jpg?v=1736399763" className="object-cover absolute object-center h-full w-full"/>
+                  <img src="https://manyavar.scene7.com/is/image/manyavar/MOIW221_439-INDIGO+BLUE_444.1761_27-07-2024-21-50:650x900?&dpr=on,2" className="object-cover absolute object-center h-full w-full"/>
                 </div>
                 <div className="relative w-full flex flex-col sm:text-xs dark:text-white text-xs">
                     <div className="">Beige Omber light weight sweater</div>
@@ -41,7 +41,7 @@ export function ProductSearchBar () {
 
             <div className="min-w-[80%] sm:min-w-[49%] sm:max-w-[49%] xl:max-h-[70%] md:max-h-[40%] sm:h-full cursor-pointer hover:scale-95 transition-all">
                 <div className="relative sm:h-[87%] h-[90%] w-full">
-                  <img src="https://www.snitch.co.in/cdn/shop/files/4MSW9069-02-M16.jpg?v=1736399763" className="object-cover absolute object-center h-full w-full"/>
+                  <img src="https://manyavar.scene7.com/is/image/manyavar/MOIW221_439-INDIGO+BLUE_444.1761_27-07-2024-21-50:650x900?&dpr=on,2" className="object-cover absolute object-center h-full w-full"/>
                 </div>
                 <div className="relative w-full flex flex-col sm:text-xs dark:text-white text-xs">
                     <div className="">Beige Omber light weight sweater</div>
@@ -57,7 +57,7 @@ export function ProductSearchBar () {
 
             <div className="min-w-[80%] sm:min-w-[49%] sm:max-w-[49%] xl:max-h-[70%] md:max-h-[40%] sm:h-full cursor-pointer hover:scale-95 transition-all">
                 <div className="relative sm:h-[87%] h-[90%] w-full">
-                  <img src="https://www.snitch.co.in/cdn/shop/files/4MSW9069-02-M16.jpg?v=1736399763" className="object-cover absolute object-center h-full w-full"/>
+                  <img src="https://manyavar.scene7.com/is/image/manyavar/MOIW221_439-INDIGO+BLUE_444.1761_27-07-2024-21-50:650x900?&dpr=on,2" className="object-cover absolute object-center h-full w-full"/>
                 </div>
                 <div className="relative w-full flex flex-col sm:text-xs dark:text-white text-xs">
                     <div className="">Beige Omber light weight sweater</div>
@@ -73,7 +73,7 @@ export function ProductSearchBar () {
 
             <div className="min-w-[80%] sm:min-w-[49%] sm:max-w-[49%] xl:max-h-[70%] md:max-h-[40%] sm:h-full cursor-pointer hover:scale-95 transition-all">
                 <div className="relative sm:h-[87%] h-[90%] w-full">
-                  <img src="https://www.snitch.co.in/cdn/shop/files/4MSW9069-02-M16.jpg?v=1736399763" className="object-cover absolute object-center h-full w-full"/>
+                  <img src="https://manyavar.scene7.com/is/image/manyavar/MOIW221_439-INDIGO+BLUE_444.1761_27-07-2024-21-50:650x900?&dpr=on,2" className="object-cover absolute object-center h-full w-full"/>
                 </div>
                 <div className="relative w-full flex flex-col sm:text-xs dark:text-white text-xs">
                     <div className="">Beige Omber light weight sweater</div>
@@ -89,7 +89,7 @@ export function ProductSearchBar () {
 
             <div className="min-w-[80%] sm:min-w-[49%] sm:max-w-[49%] xl:max-h-[70%] md:max-h-[40%] sm:h-full cursor-pointer hover:scale-95 transition-all">
                 <div className="relative sm:h-[87%] h-[90%] w-full">
-                  <img src="https://www.snitch.co.in/cdn/shop/files/4MSW9069-02-M16.jpg?v=1736399763" className="object-cover absolute object-center h-full w-full"/>
+                  <img src="https://manyavar.scene7.com/is/image/manyavar/MOIW221_439-INDIGO+BLUE_444.1761_27-07-2024-21-50:650x900?&dpr=on,2" className="object-cover absolute object-center h-full w-full"/>
                 </div>
                 <div className="relative w-full flex flex-col sm:text-xs dark:text-white text-xs">
                     <div className="">Beige Omber light weight sweater</div>
