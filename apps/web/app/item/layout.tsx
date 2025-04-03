@@ -1,0 +1,16 @@
+import { CollectionTopbar } from "@repo/ui/collectionTopbar";
+
+
+export default function ({
+    children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }> ){
+
+    return (
+      <div className="h-full ">
+        <CollectionTopbar/>
+        {children}
+      </div>
+    )
+}

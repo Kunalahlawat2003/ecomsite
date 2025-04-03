@@ -7,7 +7,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
   const pathname = usePathname();
 
   // Define routes that should NOT use the layout
-  const excludedRoutes = ["/collection/product", "/orders", "/collection", "/admin"];
+  const excludedRoutes = ["/collection/product", "/orders", "/collection", "/admin", "/item"];
 
   if (excludedRoutes.includes(pathname)) {
     return <>{children}</>; // No layout applied

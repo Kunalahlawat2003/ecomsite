@@ -20,7 +20,8 @@
     "./filterIcon": "./src/filterIcon.tsx",
     "./adminTopbar": "./src/adminTopbar.tsx",
     "./addProductModal": "./src/AddProductModal.tsx",
-    "./selectorSectionMens": "./src/selectorSectionMens.tsx"
+    "./selectorSectionMens": "./src/selectorSectionMens.tsx",
+    "./calculatorIcon": "./icons/calculatorIcon.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
