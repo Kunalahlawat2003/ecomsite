@@ -6,6 +6,8 @@ import { Login } from "@repo/ui/login";
 import { MobileFooter } from "@repo/ui/mobileFooter";
 import { MobileNav } from "@repo/ui/mobilenav";
 import { SearchBar } from "@repo/ui/searchbar";
+
+
 import { Sidebar } from "@repo/ui/sidebar";
 
 
